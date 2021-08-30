@@ -3,7 +3,7 @@ import binascii
 hexRange = 100
 dataStart = 10
 dataEnd = 24
-#addFile = "wanEnv-env/file_example_AVI_1920_2_3MG.avi"
+addFile = "wanEnv-env/file_example_WAV_1MG.wav"
 
 class Media:
 
