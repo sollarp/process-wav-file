@@ -44,19 +44,19 @@ class Media:
 
         n = 0
         # Covert databytes to readable format from list(HEX) to interger to get value (bit) 
-        for i in range(len(con)):
+        for i in con:
             try:
                 if n is 0:
                     fin2 = con[0] + con[1]
                     n += 2
-                if n >= 2:
+                if n >= 2 and 2 < len(con):
                     fin = fin2 + con[n]
                     n += 1 
             except IndexError:
+                print(f"index error")
                 pass
-        print(type(fin))
         st = ""     
-        for f in fin:
+        for f in fin2:
             st += f
             
         value = int(st, 16)
