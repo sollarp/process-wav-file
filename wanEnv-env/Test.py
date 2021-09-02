@@ -2,7 +2,7 @@ from sample import Media
 
 
 media = Media()
-addFile = "wanEnv-env/Ensoniq-ZR-76-01-Dope-77.wav"
+addFile = "wanEnv-env/file_example_WAV_1MG.wav"
 dataReturn = media.read_file(addFile)
 dataHex = media.read_hex(dataReturn)
 
@@ -36,7 +36,17 @@ def chanel_number():
    getData = handler(a, b)
    print(f"Audio format = {getData}")
 
-      
+def sample_rate():
+   a = 48
+   b = 56
+   getData = handler(a, b)
+   print(f"Sample rate = {getData}")
+
+def byte_rate():
+   a = 56
+   b = 64
+   getData = handler(a, b)
+   print(f"Byte rate = {getData}")
 
 #chunk_size()
-chanel_number()
+byte_rate()

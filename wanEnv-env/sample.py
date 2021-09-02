@@ -47,18 +47,19 @@ class Media:
         for i in con:
             try:
                 if n is 0:
-                    fin2 = con[0] + con[1]
+                    fin = con[0] + con[1]
                     n += 2
                 if n >= 2 and 2 < len(con):
-                    fin = fin2 + con[n]
+                    fin = fin + con[n]
                     n += 1 
             except IndexError:
                 print(f"index error")
                 pass
         st = ""     
-        for f in fin2:
+        for f in fin:
             st += f
-            
+       
+        
         value = int(st, 16)
         return value
 
