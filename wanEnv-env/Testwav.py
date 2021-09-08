@@ -1,8 +1,8 @@
-from sample import Media
+from main import Media
 
 
 media = Media()
-addFile = "wanEnv-env/file_example_WAV_1MG.wav"
+addFile = "file_example_WAV_1MG.wav"
 dataReturn = media.read_file(addFile)
 dataHex = media.read_hex(dataReturn)
 
